@@ -20,5 +20,15 @@ source(correlograms.R)
 ---
 
 *./data*
+
 the catalogue contains some output data examples, produced during the testing
+
+---
+
+Read more in this [presentation](https://www.slideshare.net/DariaSvidzinska/an-approach-to-the-rapid-univariate-analysis-of-spatial-pattern-of-landscape-gradients)
+
+*./2017_vnz-conf_presentation*
+
+all the presentation-related stuff
+
 
