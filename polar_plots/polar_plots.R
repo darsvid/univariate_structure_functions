@@ -1,4 +1,5 @@
 library(ggplot2)
+library(latex2exp)
 
 # SEMIVARIANCE PLOTS------------------------------------------------------------
 # 
@@ -36,7 +37,7 @@ gv6 <- ggplot(data = var.df, aes(direction, bin.center/1000)) +
     stat_contour(aes(x = direction + 180, z = v.omni, colour = ..level..),
                  binwidth = 0.1, size = 0.6) +
     stat_contour(aes(z = v.stand, colour =..level..), binwidth=0.1, size = 0.6) +
-    scale_colour_gradientn(colours = palette, name = "semi-\nvariance") +
+    scale_colour_gradientn(colours = palette, name = TeX("$\\frac{\\hat{\\gamma}(h)}{s^2}$"), breaks = seq(0, 1.5, 0.2)) +
     scale_x_continuous(breaks = seq(45, 360, 45), limits = c(0, 360)) +
     scale_y_continuous(breaks = seq(0, 30,5)) +
     coord_polar(theta = "x", start = 1.5*pi, direction = -1) +
@@ -54,7 +55,7 @@ gv6 <- ggplot(data = var.df, aes(direction, bin.center/1000)) +
          #axis.title=element_text(size=14)) +
     facet_wrap(~variable, ncol = 2)
 gv6
-ggsave("semivariance6.png", gv6, "png", width = 13.48, height = 18, units = "cm", dpi = 500)
+ggsave("semivariance_pplot.png", gv6, "png", width = 13.48, height = 18, units = "cm", dpi = 500)
 
 
 
@@ -95,7 +96,7 @@ gc6 <- ggplot(data = cor.df, aes(direction, d.mean / 1000)) +
                  binwidth = 0.1, size = 0.6) +
     stat_contour(aes(z = obs, colour =..level..), binwidth = 0.1, size = 0.6) +
     scale_colour_gradient2(high = '#d53e6b', mid = '#e3e3e3', low = '#4a6fe4',
-                           name = "Moran's I") +
+                           name = TeX("$I_{Moran}$"), breaks = seq(-1, 1, 0.2)) +
     geom_point(data = subset(cor.df, p.val > 0.01),
                aes(x = direction, y = d.mean / 1000), size = 0.01, inherit.aes = F) +
     geom_point(data = subset(cor.df, p.omni > 0.01),
@@ -113,7 +114,7 @@ gc6 <- ggplot(data = cor.df, aes(direction, d.mean / 1000)) +
           plot.margin = rep(unit(1,'pt'), 4)) +
     facet_wrap(~variable, ncol = 2)
 gc6
-ggsave("autocor6.png", gc6, "png", width = 13.48, height = 18, units = "cm", dpi = 500)
+ggsave("autocorrelation_pplot.png", gc6, "png", width = 13.48, height = 18, units = "cm", dpi = 500)
 
 
 
