@@ -2,7 +2,7 @@
 # UTF-8
 # 
 # This function performs preliminary data analysis and calculates the parameters
-# necessary for the assesmant of univariate structure functions, namely
+# necessary for the assesment of univariate structure functions, namely
 # semivariance and covarance.
 #
 # Arguments:

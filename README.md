@@ -1,3 +1,3 @@
-Tools to describe spatial structures and test for the presence of spatial correlation through univariate structure functions (correlograms, variograms).
+Tools to test for the presence of spatial pattern and describe it using directional univariate structure functions analysis.
 
 to be continued...

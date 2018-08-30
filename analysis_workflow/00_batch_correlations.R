@@ -66,7 +66,8 @@ batch.correlations <- function(data.path = "path to the directory", n.class = 13
             raster2 <- raster(xy.df[i, 2])
             coords  <- as.data.frame(raster1, xy = T, na.rm = T)[, 1:2]
             var1    <- as.data.frame(raster1, na.rm = T)[, 1]
-            var2    <- as.data.frame(raster2, na.rm = T)[, 1]
+            var2    <- extract(raster2, coords) # in case rasters have the same extent and resolution,
+            #but different number and location of NA cells
         } else {
             raster1 <- raster(xy.df[i, 3])
             raster2 <- raster(xy.df[i, 4])

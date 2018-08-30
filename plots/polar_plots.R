@@ -115,13 +115,3 @@ gc6 <- ggplot(data = cor.df, aes(direction, d.mean / 1000)) +
     facet_wrap(~variable, ncol = 2)
 gc6
 ggsave("autocorrelation_pplot.png", gc6, "png", width = 13.48, height = 18, units = "cm", dpi = 500)
-
-
-
-
-
-
-
-
-
-
