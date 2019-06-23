@@ -4,4 +4,7 @@ Svidzinska, D. (2019). The Application of Directional Univariate Structure Funct
 
 Svidzinska, D. (2019, June 23). Directional Univariate Structure Functions Analysis. Retrieved from https://osf.io/3hfq6/
 
-![alt text](https://github.com/darsvid/univariate_structure_functions/blob/master/plots/semivariance_pplot.png "Two-dimensional planimetric variogram") ![alt text](https://github.com/darsvid/univariate_structure_functions/blob/master/plots/autocorrelation_pplot.png "Two-dimensional planimetric correlogram")
+<p float="center">
+  <img src="plots/semivariance_pplot.png" height="50" />
+  <img src="plots/autocorrelation_pplot.png" height="50"/>
+</p>
