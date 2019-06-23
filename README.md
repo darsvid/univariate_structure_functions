@@ -5,6 +5,6 @@ Svidzinska, D. (2019). The Application of Directional Univariate Structure Funct
 Svidzinska, D. (2019, June 23). Directional Univariate Structure Functions Analysis. Retrieved from https://osf.io/3hfq6/
 
 <p float="center">
-  <img src="plots/semivariance_pplot.png" height="750" />
-  <img src="plots/autocorrelation_pplot.png" height="750"/>
+  <img src="plots/semivariance_pplot.png" height="700" />
+  <img src="plots/autocorrelation_pplot.png" height="700"/>
 </p>
